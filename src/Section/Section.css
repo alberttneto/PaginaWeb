@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #2C2C2C;
+    --primary-color2: #313131;
+    --second-color: #3DABAB;
+    --font-color: rgba(242, 254, 255, 0.952);
+}
+
+.section{
+    height: 500px;
+    width: 100%;
+}
+
+.title{
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+
+    animation: appear 1s ease forwards;
+}
+
+.section h2 {
+    color: var(--font-color);
+    margin-bottom: 8px; 
+}
+
+.section hr {
+    border: 1px solid var(--second-color);
+    width: 60px;
+    margin: 0 auto;
+}
+
+@keyframes appear {
+    0% {
+      font-size: 0; /* Começa com tamanho de fonte 0 */
+      opacity: 0; /* Começa totalmente transparente */
+      transform: translateY(100%); /* Começa 100% abaixo de sua posição final */
+    }
+    100% {
+      font-size: 18px; /* Tamanho final da fonte */
+      opacity: 1; /* Opacidade total */
+      transform: translateY(0); /* Termina na posição original */
+    }
+}
