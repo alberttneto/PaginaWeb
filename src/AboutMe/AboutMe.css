@@ -1,0 +1,22 @@
+
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: transition-left 5s ease forwards;
+}
+
+.aboutme p{
+    width: 500px;
+}
+
+
+@keyframes transition-left{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
