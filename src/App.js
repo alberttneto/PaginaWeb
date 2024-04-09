@@ -36,7 +36,7 @@ function App() {
           title={section.name}
           backgroundcolor={section.backgroundcolor}
           Content={section.content}
-          active={activeSection}
+          // active={activeSection}
         />
       })}
     </div>

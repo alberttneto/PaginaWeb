@@ -6,7 +6,7 @@ const Section = ({id, title, backgroundcolor, Content, active}) =>{
 
     const sectionRef = useRef(null);
 
-    active("x", true);
+    // active("x", true);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {

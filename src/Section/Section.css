@@ -1,15 +1,8 @@
-:root {
-    --primary-color: #2C2C2C;
-    --primary-color2: #313131;
-    --second-color: #3DABAB;
-    --font-color: rgba(242, 254, 255, 0.952);
-}
-
 .section{
-    height: 500px;
+    height: 600px;
     width: 100%;
 
-    margin: 50px 0;
+    padding: 70px 0;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
