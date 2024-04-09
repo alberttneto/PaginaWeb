@@ -8,6 +8,16 @@
 .section{
     height: 500px;
     width: 100%;
+
+    margin: 50px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+  
+.section.ativo {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .title{
@@ -15,9 +25,13 @@
     margin: 0 auto;
     text-align: center;
     width: 150px;
-
-    animation: appear 1s ease forwards;
 }
+
+
+
+/* .title-animation{
+    animation: appear 1s ease forwards;
+} */
 
 .section h2 {
     color: var(--font-color);
@@ -32,9 +46,9 @@
 
 @keyframes appear {
     0% {
-      font-size: 0; /* Começa com tamanho de fonte 0 */
+      font-size: 5; /* Começa com tamanho de fonte 0 */
       opacity: 0; /* Começa totalmente transparente */
-      transform: translateY(100%); /* Começa 100% abaixo de sua posição final */
+      transform: translateY(80%); /* Começa 100% abaixo de sua posição final */
     }
     100% {
       font-size: 18px; /* Tamanho final da fonte */
