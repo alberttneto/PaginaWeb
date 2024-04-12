@@ -1,15 +1,9 @@
-:root {
-    --primary-color: #2C2C2C;
-    --primary-color2: #313131;
-    --second-color: #3DABAB;
-    --font-color: rgba(242, 254, 255, 0.952);
-}
-
 .navbar{
     background-color: #222222;
     color: var(--font-color);
     
     position: fixed;
+    top: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

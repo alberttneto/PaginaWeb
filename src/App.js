@@ -13,16 +13,19 @@ function App() {
     {id: "projects", name: "Projetos", backgroundcolor: "#313131", content: <Projects/>, active: false}
   ]);
 
-  // const activeSection = (xxx, active) =>{
-  //   console.log(active);
-  //   console.log(xxx);
-  //   setSections(sections.map((section) =>{
-  //     if(section.id === xxx){
-  //       section.active = active;
-  //     }
-  //   }));
+
+  const activeSection = (xxx, active) =>{
+    console.log(active);
+    console.log(xxx);
+    setSections(sections.map((section) =>{
+      if(section.id === xxx){
+        section.active = active;
+      }
+
+      return section; 
+    }));
     
-  // }
+  }
 
   return (
     <div className="App">
@@ -36,7 +39,7 @@ function App() {
           title={section.name}
           backgroundcolor={section.backgroundcolor}
           Content={section.content}
-          // active={activeSection}
+          active={activeSection}
         />
       })}
     </div>

@@ -1,0 +1,21 @@
+.card{
+    height: 60px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+
+    border: 3px solid var(--second-color);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: var(--second-color);
+    color:var(--primary-color2);
+    box-shadow: 4px 4px 10px 0.1px var(--second-color);
+}

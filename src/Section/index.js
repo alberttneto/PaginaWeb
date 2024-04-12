@@ -3,15 +3,16 @@ import React, { useEffect, useRef } from 'react';
 
 
 const Section = ({id, title, backgroundcolor, Content, active}) =>{
-
+    
     const sectionRef = useRef(null);
 
-
     useEffect(() => {
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if(entry.isIntersecting){
                     entry.target.classList.add('ativo');
+                    console.log("teste");
                     // active("x", true);
                 }
                 else {
@@ -25,14 +26,14 @@ const Section = ({id, title, backgroundcolor, Content, active}) =>{
             observer.observe(sectionRef.current);
         }
 
-
+        const secRef = sectionRef.current;
         return () => {
-            if(sectionRef.current){
-                observer.unobserve(sectionRef.current);
+            if(secRef){
+                observer.unobserve(secRef);
             }
         } 
 
-    }, []);
+    }, [active]);
 
     return (
         <section className="section" ref={sectionRef} id={id} style={{backgroundColor:backgroundcolor}}>
