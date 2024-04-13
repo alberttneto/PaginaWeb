@@ -57,6 +57,17 @@
     color: var(--second-color);
 }
 
+.sectionActive{
+    hr{
+        animation: loadHR 1s ease forwards;
+        background-color: var(--second-color);
+    }
+
+    li{
+        color: var(--second-color);
+    }
+}
+
 @keyframes loadHR {
     0% {
         width: 0px;

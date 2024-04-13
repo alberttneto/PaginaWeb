@@ -14,11 +14,10 @@ function App() {
   ]);
 
 
-  const activeSection = (xxx, active) =>{
-    console.log(active);
-    console.log(xxx);
+  const activeSection = (id, active) =>{
+
     setSections(sections.map((section) =>{
-      if(section.id === xxx){
+      if(section.id === id){
         section.active = active;
       }
 
@@ -29,7 +28,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar 
+        sectionAboutMe={sections[0].active}
+        sectionProjects={sections[1].active}
+      />
       <Header />
 
       {sections.map((section) => {

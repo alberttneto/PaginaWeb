@@ -12,12 +12,11 @@ const Section = ({id, title, backgroundcolor, Content, active}) =>{
             entries.forEach(entry => {
                 if(entry.isIntersecting){
                     entry.target.classList.add('ativo');
-                    console.log("teste");
-                    // active("x", true);
+                    active(id, true);
                 }
                 else {
                     entry.target.classList.remove('ativo');
-                    // active(id, false);
+                    active(id, false);
                 }
             });
         },{threshold: 0.5});
@@ -33,7 +32,7 @@ const Section = ({id, title, backgroundcolor, Content, active}) =>{
             }
         } 
 
-    }, [active]);
+    }, []);
 
     return (
         <section className="section" ref={sectionRef} id={id} style={{backgroundColor:backgroundcolor}}>
