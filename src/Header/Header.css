@@ -7,7 +7,7 @@
 
 .header{
     background-color: var(--primary-color2);
-    height: 700px;
+    height: 800px;
 
     display: flex;
     flex-direction: row;

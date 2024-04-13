@@ -5,6 +5,7 @@ import Header from './Header';
 import Navbar from './Navbar';
 import Projects from './Projects';
 import Section from './Section';
+import Footer from './Footer';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           active={activeSection}
         />
       })}
+      <Footer />
     </div>
   );
 }

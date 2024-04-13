@@ -7,10 +7,13 @@
     border: 3px solid var(--second-color);
     border-radius: 20px;
 
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 1s ease;
+
+    opacity: 0;
+    animation: transitionCards 3s forwards;
 }
 
 .card:hover{
@@ -18,4 +21,20 @@
     background-color: var(--second-color);
     color:var(--primary-color2);
     box-shadow: 4px 4px 10px 0.1px var(--second-color);
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes transitionCards {
+    
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }

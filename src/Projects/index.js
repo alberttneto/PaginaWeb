@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "../Card";
+import { v4 as uuidv4 } from 'uuid';
 import "./Projects.css"
+import DescriptionProject from "../DescriptionProject";
 
 const Projects = () => {
 
@@ -25,9 +27,6 @@ const Projects = () => {
         {name: "Organizador de Equipes", 
         description: "", 
         image: "", type: ""},
-        {name: "", 
-        description: "", 
-        image: "", type: ""}
     ];
 
     const typeCards = (event) =>{
@@ -35,9 +34,6 @@ const Projects = () => {
         setfilterProjects(projects.filter((project) => 
             project.type === event
         ))
-        
-        console.log(projects);
-        console.log(filterProjects);
     }
 
     return (
@@ -58,10 +54,10 @@ const Projects = () => {
             </ul>
 
             <div className="cards">
-                {filterProjects.length == 0 ?
+                {filterProjects.length === 0 ?
                     projects.map((project) => {
                         return <Card 
-                            key={project.name}
+                            key={uuidv4()}
                             name={project.name}
                             description={project.description}
                             image={project.image}
@@ -79,7 +75,9 @@ const Projects = () => {
                         />
                     })
                 }
+                <DescriptionProject 
 
+                />
             </div>
 
         </div>

@@ -16,7 +16,7 @@
     padding: 10px 20px;
 }
 
-.projects li:hover{
+.projects > ul li:hover{
     cursor: pointer;
     color: var(--second-color);
 }
