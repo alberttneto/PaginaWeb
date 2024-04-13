@@ -1,7 +1,10 @@
+import { useEffect, useState } from "react";
 import Card from "../Card";
 import "./Projects.css"
 
 const Projects = () => {
+
+    const [filterProjects, setfilterProjects] = useState([]);
 
     const projects = [
         {name: "Simulador MT", 
@@ -25,35 +28,58 @@ const Projects = () => {
         {name: "", 
         description: "", 
         image: "", type: ""}
-
     ];
+
+    const typeCards = (event) =>{
+
+        setfilterProjects(projects.filter((project) => 
+            project.type === event
+        ))
+        
+        console.log(projects);
+        console.log(filterProjects);
+    }
 
     return (
         <div className="projects">
             <ul>
-                <li>
+                <li onClick={event => typeCards(event.target.innerHTML)}>
                     Todos
                 </li>
-                <li>
-                    Acadêmicos
+                <li onClick={event => typeCards(event.target.innerHTML)}>
+                    Acadêmico
                 </li>
-                <li>
-                    Pessoais
+                <li onClick={event => typeCards(event.target.innerHTML)}>
+                    Pessoal
                 </li>
-                <li>
+                <li onClick={event => typeCards(event.target.innerHTML)}>
                     Cursos
                 </li>
             </ul>
+
             <div className="cards">
-                {projects.map((project) => {
-                    return <Card 
-                        key={project.name}
-                        name={project.name}
-                        description={project.description}
-                        image={project.image}
-                        type={project.type}
-                    />
-                })}
+                {filterProjects.length == 0 ?
+                    projects.map((project) => {
+                        return <Card 
+                            key={project.name}
+                            name={project.name}
+                            description={project.description}
+                            image={project.image}
+                            type={project.type}
+                        />
+                    })
+                    :
+                    filterProjects.map((project) => {
+                        return <Card 
+                            key={project.name}
+                            name={project.name}
+                            description={project.description}
+                            image={project.image}
+                            type={project.type}
+                        />
+                    })
+                }
+
             </div>
 
         </div>
