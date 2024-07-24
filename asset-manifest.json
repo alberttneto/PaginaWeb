@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PaginaWeb/static/css/main.038ff6b9.css",
+    "main.js": "/PaginaWeb/static/js/main.279c6cd0.js",
+    "index.html": "/PaginaWeb/index.html",
+    "main.038ff6b9.css.map": "/PaginaWeb/static/css/main.038ff6b9.css.map",
+    "main.279c6cd0.js.map": "/PaginaWeb/static/js/main.279c6cd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.038ff6b9.css",
+    "static/js/main.279c6cd0.js"
+  ]
+}
