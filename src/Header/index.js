@@ -12,7 +12,7 @@ const Header = () =>{
             </div>
 
             <div>
-                <img src="/images/Profile.png" alt="Foto de perfil" width={550}/>
+                <img src="images/Profile.png" alt="Foto de perfil" width={550}/>
             </div>
         </header>
     );

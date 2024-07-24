@@ -6,7 +6,7 @@ const AboutMet = () => {
 
     return (
         <div className="aboutme">
-            <img src="/images/Profile2.png" alt="Imagem de perfil" width={400}/>
+            <img src="images/Profile2.png" alt="Imagem de perfil" width={400}/>
             <p>
             Sou um profissional formado em Ciência da Computação, com experiência acadêmica abrangente em diversos assuntos relacionados à tecnologia, como programação, banco de dados, redes de computadores, inteligência artificial e muito mais.<br/><br/>
 

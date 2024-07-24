@@ -11,19 +11,19 @@ const Projects = () => {
     const projects = [
         {name: "Simulador MT", 
         description: "Ferramenta que simula uma máquina de Turing, um modelo teórico de computação. Com uma interface intuitiva, permite aos usuários criar e executar programas turing completos, visualizar o funcionamento da fita e acompanhar o estado interno da máquina. Ideal para o estudo e compreensão dos conceitos fundamentais da computação teórica.", 
-        image: "", type: "Acadêmico"},
+        image: "", type: "Acadêmico", link: "https://alberttneto.github.io/SimuladorMT/"},
         {name: "Replica Página Netflix", 
         description: "", 
-        image: "", type: "Cursos"},
+        image: "", type: "Cursos", link: "https://alberttneto.github.io/BootCamp-TBDevWeb/Recriando_Interface_Netflix/"},
         {name: "Calculadora", 
         description: "", 
-        image: "", type: "Cursos"},
+        image: "", type: "Cursos", link: "https://alberttneto.github.io/BootCamp-TBDevWeb/Calculadora_Mentoria5/"},
         {name: "Camimica", 
         description: "", 
-        image: "", type: "Pessoal"},
+        image: "", type: "Pessoal", link: "https://alberttneto.github.io/Camimica/"},
         {name: "Site Clínica Médica", 
         description: "",
-        image: "", type: "Acadêmico"},
+        image: "", type: "Acadêmico", link: "http://clinicamedicageral.atwebpages.com/index.html"},
         {name: "Organizador de Equipes", 
         description: "", 
         image: "", type: ""},
@@ -62,6 +62,7 @@ const Projects = () => {
                             description={project.description}
                             image={project.image}
                             type={project.type}
+                            link={project.link}
                         />
                     })
                     :
@@ -72,6 +73,7 @@ const Projects = () => {
                             description={project.description}
                             image={project.image}
                             type={project.type}
+                            link={project.link}
                         />
                     })
                 }
