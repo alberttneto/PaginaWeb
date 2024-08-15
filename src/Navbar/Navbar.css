@@ -77,3 +77,29 @@
         width: 30px;
     }
 }
+
+
+@media (max-width: 970px) {
+    .navbar{
+        height: 120px;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 820px) {
+
+    .navbar{
+        padding: 0px 100px;
+    }
+
+    .navbar li{
+        margin: 5px;
+    }
+
+    .navbar a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
