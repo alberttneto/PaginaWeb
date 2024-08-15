@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PaginaWeb/static/css/main.038ff6b9.css",
-    "main.js": "/PaginaWeb/static/js/main.e035879f.js",
-    "index.html": "/PaginaWeb/index.html",
-    "main.038ff6b9.css.map": "/PaginaWeb/static/css/main.038ff6b9.css.map",
-    "main.e035879f.js.map": "/PaginaWeb/static/js/main.e035879f.js.map"
+    "main.css": "/static/css/main.dfdd20b0.css",
+    "main.js": "/static/js/main.e035879f.js",
+    "index.html": "/index.html",
+    "main.dfdd20b0.css.map": "/static/css/main.dfdd20b0.css.map",
+    "main.e035879f.js.map": "/static/js/main.e035879f.js.map"
   },
   "entrypoints": [
-    "static/css/main.038ff6b9.css",
+    "static/css/main.dfdd20b0.css",
     "static/js/main.e035879f.js"
   ]
 }
